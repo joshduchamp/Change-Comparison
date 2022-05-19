@@ -7,16 +7,8 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <property name="title" type="String" label="Title" />
-            <property name="headerA" type="String" label="Value A Header" default="Old Value" />
-            <property name="headerB" type="String" label="Value B Header" default="New Value"/>
             <property name="recordId" type="String" />
-            <property name="recordIdAField" type="String" label="Id field for Record A" placeholder="Contact.Id" />
-            <property name="recordIdBField" type="String" label="Id field for Record B" placeholder="Contact.ReportsToId" />
-            <property name="fieldLabelsDelimited" type="String" label="Field Labels" placeholder="First Name,Last Name,Mobile" />
-            <property name="fieldListADelimited" type="String" label="Field List A" placeholder="Contact.FirstName,Contact.LastName,Contact.MobilePhone" />
-            <property name="fieldListBDelimited" type="String" label="Field List B" placeholder="Contact.FirstName,Contact.LastName,Contact.MobilePhone" />
-            <property name="hideMatchingValues" type="Boolean" label="Hide Matching Values" default="false" />
+            <property name="metadataId" type="String" />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
