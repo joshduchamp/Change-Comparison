@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Change_Comparison_Mapping__mdt.Field_Labels__c</members>
+        <members>Change_Comparison_Mapping__mdt.Hide_Matching_Values__c</members>
+        <members>Change_Comparison_Mapping__mdt.Root_Record_Api_Name__c</members>
+        <members>Change_Comparison_Mapping__mdt.Title__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueA_Api_Name__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueA_Fields__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueA_Header__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueA_Id_Field__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueB_Api_Name__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueB_Fields__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueB_Header__c</members>
+        <members>Change_Comparison_Mapping__mdt.ValueB_Id_Field__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Change_Comparison_Mapping__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Change_Comparison_Mapping__mdt-Change Comparison Mappings Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>changeComparison</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>53.0</version>
+</Package>
