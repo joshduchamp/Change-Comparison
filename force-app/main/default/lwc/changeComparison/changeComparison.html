@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title={title}>
+        <div class="slds-m-horizontal_medium">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>{headerA}</th>
+                        <th>{headerB}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={rowList} for:item="rowItem">
+                        <template if:false={rowItem.hide}>
+                            <tr key={rowItem.fieldLabel}>
+                                <th>{rowItem.fieldLabel}</th>
+                                <td>{rowItem.valueA}</td>
+                                <td>{rowItem.valueB}</td>
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>
