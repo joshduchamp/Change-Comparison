@@ -19,6 +19,14 @@ export default class ChangeComparison extends LightningElement {
     @track recordIdA;
     @track recordIdB;
 
+    @api get fieldListAFiltered() {
+        return this.fieldListA.filter(x => x);
+    }
+
+    @api get fieldListBFiltered() {
+        return this.fieldListB.filter(x => x);
+    }
+
     connectedCallback() {
         this.fieldLabels = this.fieldLabelsDelimited ? this.fieldLabelsDelimited.split(',') : [];
         this.fieldListA = this.fieldListADelimited ? this.fieldListADelimited.split(',') : [];
@@ -41,10 +49,10 @@ export default class ChangeComparison extends LightningElement {
         }
     }
 
-    @wire(getRecord, { recordId: '$recordIdA', optionalFields: '$fieldListA' })
+    @wire(getRecord, { recordId: '$recordIdA', optionalFields: '$fieldListAFiltered' })
     recordA;
 
-    @wire(getRecord, { recordId: '$recordIdB', optionalFields: '$fieldListB' })
+    @wire(getRecord, { recordId: '$recordIdB', optionalFields: '$fieldListBFiltered' })
     recordB;
 
     @api get rowList() {
